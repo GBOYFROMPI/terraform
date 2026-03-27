@@ -1,5 +1,17 @@
 name: Terraform
 
+provider "aws" {
+  region = "ap-south-1"
+}
+
+resource "aws_s3_bucket" "demo" {
+  bucket = "gboyfrompi"
+
+  tags = {
+    Name = "test"
+  }
+}
+
 permissions:
   id-token: write
   contents: read
