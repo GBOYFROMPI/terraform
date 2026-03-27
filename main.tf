@@ -11,9 +11,9 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "demo" {
-  bucket = "gboyfrompi"
-}
+  bucket = "gboyfrompi-demoboi"
 
-tags = {
-  Name = "test"
+  tags = {
+    Name = "test"
+  }
 }
